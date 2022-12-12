@@ -1,0 +1,103 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-11-06T15:29:53.809Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "to open google home page and enter google",
+        "description": "",
+        "id": "to-open-google-home-page;to-open-google-home-page-and-enter-google",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9593000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user open the browser in chrome",
+            "match": {
+              "location": "stepDefinition.login.user_open_the_browser_in_chrome()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 113000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "clicks on search button",
+            "match": {
+              "location": "stepDefinition.login.clicks_on_search_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6751000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter the value \"googleChrome\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"googleChrome\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepDefinition.login.enter_the_value(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "to open google home page",
+    "description": "",
+    "id": "to-open-google-home-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/loginLatestFile.feature",
+    "tags": []
+  }
+]
