@@ -11,3 +11,4 @@ Feature: to open google home page
     When clicks on search button
     Then enter the value "googleChrome"
  #Then the results are displayed.
+ 
