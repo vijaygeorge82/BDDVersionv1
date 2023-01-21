@@ -1,7 +1,0 @@
-runner\udhayTestNG.class
-NewTest.class
-stepDefinition\ApplicationHooks.class
-utils\LoggerHelper.class
-runner\TestNgRunner.class
-runner\testRunner.class
-stepDefinition\login.class

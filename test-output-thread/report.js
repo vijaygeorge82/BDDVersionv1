@@ -1,14 +1,14 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "f7db964e-70c7-466b-8506-5ad469ee5e9e",
+    "id": "64ccfb10-da2f-4229-815c-f82480d83620",
     "feature": "to open google home page",
     "scenario": "to open google home page and enter google",
-    "start": 1667753103546,
+    "start": 1674322694769,
     "group": 1,
     "content": "",
     "tags": "",
-    "end": 1667753115707,
+    "end": 1674322697917,
     "className": "passed"
   }
 ]);

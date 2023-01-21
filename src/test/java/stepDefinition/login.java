@@ -13,8 +13,8 @@ import org.openqa.selenium.By; import org.openqa.selenium.WebDriver; import
 	//  import cucumber.api.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import utils.LoggerHelper;
 import io.cucumber.java.en.Given;
+import utils.*;
   public class login {
   
   
@@ -72,7 +72,7 @@ import io.cucumber.java.en.Given;
 public void user_open_the_browser_in_chrome() {
 	
 	  System.setProperty("webdriver.chrome.driver",
-	  "C:\\Users\\14168\\Downloads\\chromedriver_win32\\chromedriver.exe"); 
+	  "C:/Users/14168/Documents/BDDVJ_12Dec2022/Driver/chromedriver.exe"); 
 		/*
 		 * ChromeOptions options = new ChromeOptions(); options.addExtensions(new
 		 * File("Path to CRX File")); DesiredCapabilities capabilities = new
@@ -85,8 +85,10 @@ public void user_open_the_browser_in_chrome() {
 	  driver.get("https://www.google.ca/");
 	  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS); WebDriverWait
 	  wait = new WebDriverWait(driver,30);
-	  wait.until(ExpectedConditions.visibilityOfElementLocated(By.
-	  xpath("(//input[@class='gLFyf gsfi'])")));
+		/*
+		 * wait.until(ExpectedConditions.visibilityOfElementLocated(By.
+		 * xpath("(//input[@class='gLFyf gsfi'])")));
+		 */
 	 
 	
 	System.out.println("TestFile given");
@@ -107,13 +109,14 @@ public void clicks_on_search_button() {
 
 @Then("enter the value {string}")
 public void enter_the_value(String string) {
-	driver.findElement(By.xpath("(//input[@class='gLFyf gsfi'])")).click();
-	driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-	driver.findElement(By.xpath("(//input[@class='gLFyf gsfi'])")).sendKeys(
-			  "Automation"); 
-	driver.manage().timeouts().implicitlyWait(5,
-			  TimeUnit.SECONDS); //
-			  driver.findElement(By.xpath("(//span[text()='automation'])[1]")).click();
+	/*
+	 * driver.findElement(By.xpath("(//input[@class='gLFyf gsfi'])")).click();
+	 * driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+	 * driver.findElement(By.xpath("(//input[@class='gLFyf gsfi'])")).sendKeys(
+	 * "Automation"); driver.manage().timeouts().implicitlyWait(5,
+	 * TimeUnit.SECONDS); //
+	 * driver.findElement(By.xpath("(//span[text()='automation'])[1]")).click();
+	 */
 	System.out.println("TestFile Then");
 	driver.close();
 	driver.quit();
